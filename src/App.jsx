@@ -5,10 +5,12 @@ import NavBar from "./components/NavBar";
 import Cart from './pages/cart/Cart';
 import PlaceOrder from './pages/placeorder/PlaceOrder';
 import Home from './pages/home/Home';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
   return (
+    <>
     <div className="app">
       <NavBar />
       <Router>
@@ -19,6 +21,9 @@ function App() {
       </Routes>
       </Router>
     </div>
+    <Footer />
+    </>
+    
   )
 }
 
