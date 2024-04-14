@@ -35,11 +35,9 @@
   padding: 1vw 2.3vw;
   border: none;
   border-radius: 50px;
-  font-size: max(1.2vw, 13px);
+  font-size: max(1.2w, 13px);
   font-weight: 500;
 }
-
-/* Media Queries */
 
 @media (max-width: 1050px) {
   .header-contents {

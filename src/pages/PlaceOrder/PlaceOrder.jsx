@@ -1,4 +1,6 @@
-function PlaceOrder() {
+import "./PlaceOrder.css"
+
+const PlaceOrder = () => {
   return (
     <div>PlaceOrder</div>
   )

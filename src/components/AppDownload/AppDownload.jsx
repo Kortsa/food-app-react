@@ -1,19 +1,18 @@
-import './AppDowload.css'
-import {assets} from "../../assets/assets"
+import { assets } from "../../assets/assets";
+import "./AppDownload.css";
 
-function AppDownload() {
-
+const AppDownload = () => {
   return (
-    <div className='app-download' id='app-download'>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia alias officiis quis ipsum consectetur. Quas?
-        </p>
-        <div className='app-download-platforms'>
-            <img src={assets.play_store} alt="" />
-            <img src={assets.play_store} alt="" />
-        </div>
-
+    <div className="app-download" id="app-download">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ipsam!
+        <br /> Tomato App
+      </p>
+      <div className="app-download-platforms">
+        <img src={assets.play_store} alt="" />
+        <img src={assets.app_store} alt="" />
+      </div>
     </div>
-  )
-}
+  );
+};
 export default AppDownload;

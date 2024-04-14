@@ -1,14 +1,15 @@
-import { assets } from "../assets/assets";
-import { useState } from "react";
-
 import "./Navbar.css";
+import { assets } from "../../assets/assets";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-
-function NavBar() {
+const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
   return (
     <div className="navbar">
-      <img src={assets.logo} alt="" className="logo" />
+      <Link to={"/"}>
+        {" "}
+        <img src={assets.logo} alt="" className="logo" />
+      </Link>
 
       <ul className="navbar-menu">
         <Link
@@ -18,7 +19,6 @@ function NavBar() {
         >
           Home
         </Link>
-
         <a
           href="#explore-menu"
           onClick={() => setMenu("menu")}
@@ -26,7 +26,6 @@ function NavBar() {
         >
           Menu
         </a>
-
         <a
           href="#app-download"
           onClick={() => setMenu("mobile-app")}
@@ -34,7 +33,6 @@ function NavBar() {
         >
           Mobile App
         </a>
-
         <a
           href="#footer"
           onClick={() => setMenu("contact-us")}
@@ -46,12 +44,14 @@ function NavBar() {
       <div className="navbar-right">
         <img src={assets.search_icon} alt="" />
         <div className="navbar-search-icon">
-          <img src={assets.basket_icon} alt="" />
+          <Link to={"/cart"}>
+            <img src={assets.basket_icon} alt="" />
+          </Link>
           <div className="dot"></div>
         </div>
-        <button>Sign In</button>
+        <button onClick={() => setShowLogin(true)}>Sign In</button>
       </div>
     </div>
   );
-}
-export default NavBar;
+};
+export default Navbar;
