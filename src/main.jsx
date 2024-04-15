@@ -9,19 +9,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <StoreContextProvider>
-        <Routes>
+        {/* <Routes>
           <Route path="*" element={<App />}></Route>
-        </Routes>
+        </Routes> */}
+        <App />
       </StoreContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
 
-// <React.StrictMode>
-//     <BrowserRouter>
-//       <Routes>
-//         <Route path="/" element={ <App /> }>
-//         </Route>
-//       </Routes>
-//     </BrowserRouter>
-//   </React.StrictMode>,
+

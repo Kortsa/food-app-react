@@ -30,13 +30,13 @@ const Footer = () => {
         <div className="footer-content-right">
           <h2>Get In Touch</h2>
           <ul>
-            <li>+256888699</li>
-            <li>contact@myapp.com</li>
+            <li>+233544993066</li>
+            <li>leo@gmail.com</li>
           </ul>
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright &copy; Spider Hussle</p>
+      <p className="footer-copyright">Copyright &copy; Kortsa Hussle</p>
     </div>
   );
 };
